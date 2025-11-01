@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="MauiApp1.VersionTemplate"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp1">
+    <Grid RowDefinitions="*,40">
+        <ContentPresenter />
+        <Grid
+            Grid.Row="1"
+            BackgroundColor="{StaticResource Primary}">
+            <Label
+                HorizontalOptions="Center"
+                Text="{x:Static local:App.MauiVersion}"
+                TextColor="{StaticResource White}"
+                VerticalOptions="Center" />
+        </Grid>
+    </Grid>
+</ContentView>
